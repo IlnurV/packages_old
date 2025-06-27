@@ -217,7 +217,7 @@ class Camera
             CaptureMode.photo);
 
     // Create capture callback.
-    captureTimeouts = new CaptureTimeoutsWrapper(3000, 3000);
+    captureTimeouts = new CaptureTimeoutsWrapper(300, 300);
     captureProps = new CameraCaptureProperties();
     cameraCaptureCallback = CameraCaptureCallback.create(this, captureTimeouts, captureProps);
 
